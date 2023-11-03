@@ -66,14 +66,18 @@ public class personagem{
         System.out.println("Você tem atualmente " + this.vida + " pontos de vida.");
     }
  
-    public void addVida(int vida){
-        this.vida += vida;
-        if (vida<0) {
-            System.out.println("Você perdeu " + vida + " de vida.");
+    public void addVida(int vidaPoints){
+        this.vida += vidaPoints;
+        if (vidaPoints<0) {
+            System.out.println("Você perdeu " + vidaPoints + " pontos de vida.");
             getVida();
         }
+        else if(vidaPoints == 0){
+            System.out.println("Não houve alteração na sua vida.");
+        }
+        
         else{
-            System.out.println("Você ganhou " + vida + " de vida.");
+            System.out.println("Você ganhou " + vidaPoints + "pontos de vida.");
             getVida();
         }
         verificaVida();

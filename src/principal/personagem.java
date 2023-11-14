@@ -44,10 +44,10 @@ public class personagem{
     public void getEstamina(){
         
         if (this.Estamina == 1) {//correçao de escrita
-            System.out.println("Você tem atualmente " + this.Estamina + " ponto de estamina.");
+            System.out.println("Você tem atualmente " + this.Estamina + " ponto de estamina.\n");
         }
         else{
-            System.out.println("Você tem atualmente " + this.Estamina + " pontos de estamina.");
+            System.out.println("Você tem atualmente " + this.Estamina + " pontos de estamina.\n");
         }
     }
     

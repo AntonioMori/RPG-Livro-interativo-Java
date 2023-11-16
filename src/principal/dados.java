@@ -1,12 +1,12 @@
 package principal;
 
 public class dados {
-    public static String titulo ="The Florest\n";
+    
     
     public static class capitulos{
         
         
-        public static String cap1 = "Voce está viajando, dentro do avião a aeromoça começa a "
+        public static String cap1 = "The Florest\nVoce está viajando, dentro do avião a aeromoça começa a "
         + "explicar as normas de segurança, mas você esta com muito sono, o que você faz?\n";
 
         public static String cap2 = "\nVocê acorda depois de ouvir uma grande explosão, de imediato os sinais de cinto "

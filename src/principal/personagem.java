@@ -54,6 +54,7 @@ public class personagem{
     public void endGame(){
         System.out.println("\n------Você morreu, fim de jogo.------\n");
         System.exit(0);
+        
     }
 
     public void verificaVida(){

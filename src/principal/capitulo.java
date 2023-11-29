@@ -9,9 +9,7 @@ public class capitulo{
     private String texto;
     private String pergunta;
     private personagem personagem;
-    private personagem personagem2;
-    private int escolhaRespo;
-    private int vida;
+    
     private int dano;
     private int estamina;
     private boolean diferencial;
@@ -20,10 +18,10 @@ public class capitulo{
     
     static Scanner input = new Scanner(System.in);
 
-    public capitulo(String texto, int escolhaRespo) {
+    public capitulo(String texto) {
         
         this.texto = texto;
-        this.escolhaRespo = escolhaRespo;
+        
         pergunta = "Escolha uma opção: ";
     }
 
@@ -36,11 +34,10 @@ public class capitulo{
         this.estamina=estamina;
 
     }
-    public capitulo(String texto, personagem personagem, int escolhaRespo, boolean diferencial) {
+    public capitulo(String texto, personagem personagem, boolean diferencial) {
         
         this.texto = texto;
         this.personagem = personagem;
-        this.escolhaRespo = escolhaRespo;
         pergunta = "Escolha uma opção: ";
         this.diferencial = diferencial;
     }

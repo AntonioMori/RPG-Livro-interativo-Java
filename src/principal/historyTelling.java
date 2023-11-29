@@ -11,10 +11,10 @@ public class historyTelling{
         personagem sobrevivente = new personagem(10,1,100);
        
         //raiz
-        capitulo introducao = new capitulo(dados.capitulos.cap1,0);
-        capitulo capituloA = new capitulo( dados.capitulos.cap2,0 );
-        capitulo capituloB = new capitulo(dados.capitulos.cap2,0 );
-        capitulo capituloC = new capitulo(dados.finais.final_B1 + dados.capitulos.cap3,sobrevivente,0, true);
+        capitulo introducao = new capitulo(dados.capitulos.cap1);
+        capitulo capituloA = new capitulo( dados.capitulos.cap2);
+        capitulo capituloB = new capitulo(dados.capitulos.cap2 );
+        capitulo capituloC = new capitulo(dados.finais.final_B1 + dados.capitulos.cap3,sobrevivente, true);
         capitulo finalA2 = new capitulo(dados.finais.final_A2,sobrevivente,-100,10);
         capitulo finalA1 = new capitulo(dados.finais.final_A1,sobrevivente,-100,10);
         capitulo finalB2 = new capitulo(dados.finais.final_B2, sobrevivente,-100, 10);

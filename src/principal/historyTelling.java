@@ -7,20 +7,19 @@ public class historyTelling{
     public static void main(String[] args) {
        
         Scanner input = new Scanner(System.in);
-        personagem carangueijo = new personagem("carangueijo gigante","animal marinho",-100,50);
-        personagem sobrevivente = new personagem( "protagonista", "humano" ,10,1,"masculino",100);
+        personagem carangueijo = new personagem(10,-100,50);
+        personagem sobrevivente = new personagem(10,1,100);
        
         //raiz
-        capitulo introducao = new capitulo("introducao", dados.capitulos.cap1,sobrevivente,0);        
-        
-        capitulo capituloA = new capitulo("CapituloA", dados.capitulos.cap2, sobrevivente,0 );   
-        capitulo capituloB = new capitulo("CapituloB", dados.capitulos.cap2, sobrevivente,0 );
-        capitulo capituloC = new capitulo("CapituloC",dados.finais.final_B1 + dados.capitulos.cap3,sobrevivente,0, true);
-        capitulo finalA2 = new capitulo(dados.finais.final_A2,sobrevivente,sobrevivente.vida,-100,10);
-        capitulo finalA1 = new capitulo(dados.finais.final_A1,sobrevivente,sobrevivente.vida,-100,10);
-        capitulo finalB2 = new capitulo(dados.finais.final_B2, sobrevivente, sobrevivente.vida,-100, 10);
-        capitulo finalC1 = new capitulo(dados.finais.final_C1, sobrevivente, sobrevivente.vida,0,-3);
-        capitulo finalC2 = new capitulo(dados.finais.final_C2,sobrevivente,sobrevivente.vida,carangueijo.dano,10);
+        capitulo introducao = new capitulo(dados.capitulos.cap1,0);
+        capitulo capituloA = new capitulo( dados.capitulos.cap2,0 );
+        capitulo capituloB = new capitulo(dados.capitulos.cap2,0 );
+        capitulo capituloC = new capitulo(dados.finais.final_B1 + dados.capitulos.cap3,sobrevivente,0, true);
+        capitulo finalA2 = new capitulo(dados.finais.final_A2,sobrevivente,-100,10);
+        capitulo finalA1 = new capitulo(dados.finais.final_A1,sobrevivente,-100,10);
+        capitulo finalB2 = new capitulo(dados.finais.final_B2, sobrevivente,-100, 10);
+        capitulo finalC1 = new capitulo(dados.finais.final_C1, sobrevivente,0,-3);
+        capitulo finalC2 = new capitulo(dados.finais.final_C2,sobrevivente,carangueijo.getDano(),10);
 
         // array de escolhas para cada capitulo
         escolha[] introducaoCap = new escolha[2]; 

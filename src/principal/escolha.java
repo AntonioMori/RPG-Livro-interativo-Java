@@ -1,8 +1,8 @@
 package principal;
 
 public class escolha {
-    String texto;
-    capitulo proximo;
+    private String texto;
+    private capitulo proximo;
 
     public escolha(String texto, capitulo proximo){
         this.texto = texto;
@@ -10,6 +10,8 @@ public class escolha {
         
     }
 
+    //getters
+    
     public String getTexto() {
         return this.texto;
     }
@@ -17,7 +19,8 @@ public class escolha {
     public capitulo getProximo() {
         return this.proximo;
     }
-
+    //setters
+    
     public void setProximo(capitulo proximo) {
         this.proximo = proximo;
     }

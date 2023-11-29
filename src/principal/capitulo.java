@@ -5,40 +5,39 @@ import java.util.Scanner;
 
 
 public class capitulo{
-    String nome;
-    String texto;
-    String pergunta;
-    personagem personagem;
-    personagem personagem2;
-    int escolhaRespo;
-    int vida;
-    int dano;
-    int estamina;
-    boolean diferencial;
-    escolha[] arrayEscolhas;
+    
+    private String texto;
+    private String pergunta;
+    private personagem personagem;
+    private personagem personagem2;
+    private int escolhaRespo;
+    private int vida;
+    private int dano;
+    private int estamina;
+    private boolean diferencial;
+    private escolha[] arrayEscolhas;
 
     
     static Scanner input = new Scanner(System.in);
 
-    public capitulo(String nome, String texto, personagem personagem, int escolhaRespo) {
-        this.nome = nome;
+    public capitulo(String texto, int escolhaRespo) {
+        
         this.texto = texto;
-        this.personagem = personagem;
         this.escolhaRespo = escolhaRespo;
         pergunta = "Escolha uma opção: ";
     }
 
     //construtor capitulo final
-    public capitulo(String texto,personagem personagem,int vida,int dano, int estamina){
+    public capitulo(String texto,personagem personagem,int dano, int estamina){
         this.texto =texto;
-        this.personagem=personagem;
-        this.vida = vida;
+        this.personagem = personagem;
+        
         this.dano= dano;
         this.estamina=estamina;
 
     }
-    public capitulo(String nome, String texto, personagem personagem, int escolhaRespo, boolean diferencial) {
-        this.nome = nome;
+    public capitulo(String texto, personagem personagem, int escolhaRespo, boolean diferencial) {
+        
         this.texto = texto;
         this.personagem = personagem;
         this.escolhaRespo = escolhaRespo;
@@ -58,7 +57,7 @@ public class capitulo{
             
             String name = input.next();
             this.personagem.setName(name);
-            System.out.println("\nAo ler o seu nome " + this.personagem.nome + " você se lembra de como foi parar lá, mas percebe que um"+ 
+            System.out.println("\nAo ler o seu nome '" + this.personagem.getNome() + "' você se lembra de como foi parar lá, mas percebe que um"+ 
             " carangueijo gigante está vindo em sua direção, o que você faz?\n");
             diferencial =false;
             
@@ -72,9 +71,8 @@ public class capitulo{
             System.out.println("\n"+pergunta);
         
         }else{
-            this.personagem.addVida(this.dano);
-            this.personagem.addEstamina(this.estamina);
-            this.personagem.verificaVida();
+            this.personagem.setVida(this.dano);
+            this.personagem.setEstamina(this.estamina);
         }
         
 
@@ -96,8 +94,6 @@ public class capitulo{
         return false;
         
     }
-
-    
 
     public void escolher(){ // ele precisa
         
@@ -133,4 +129,6 @@ public class capitulo{
     public void setArray(escolha[] arrayEscolhas){
         this.arrayEscolhas = arrayEscolhas;
     }
+
+
 }

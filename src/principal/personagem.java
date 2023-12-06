@@ -1,12 +1,13 @@
 package principal;
 
 public class personagem{
-    private String nome = null;
+    private String nome;
     private int dano;
     private int vida;
     private int estamina;
  
-    public personagem( int estamina, int dano, int vida) {
+    public personagem(String nome, int estamina, int dano, int vida) {
+        this.nome = nome;
         this.dano = dano;
         this.vida = vida;
         this.estamina = estamina;
@@ -31,7 +32,7 @@ public class personagem{
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
 

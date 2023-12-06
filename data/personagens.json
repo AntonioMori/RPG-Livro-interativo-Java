@@ -1,0 +1,5 @@
+[
+    {"nome": "Sobrevivente", "estamina": 10, "dano": 1, "vida": 100},
+    {"nome": "Carangueijo", "estamina": 10, "dano": -100, "vida": 50}
+  ]
+  

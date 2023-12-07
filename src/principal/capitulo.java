@@ -168,7 +168,9 @@ public class capitulo implements Serializable{
         while (isValidName(name)==false) {
                 if (n>2) {
                     System.out.println("\nVocê se esforçou tanto para tentar se lembrar do seu nome que voce desmaiou.");
+                    resetProgresso("data/capitulo_atual.txt");
                     this.personagemAssociado.setVida(-100);
+
                 }
                 else{
                     System.out.println("\n Nome inválido, por favor digite novamente: ");

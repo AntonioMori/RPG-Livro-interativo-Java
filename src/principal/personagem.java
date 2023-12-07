@@ -1,6 +1,6 @@
 package principal;
-
-public class personagem{
+import java.io.Serializable;
+public class personagem implements Serializable{
     private String nome;
     private int dano;
     private int vida;

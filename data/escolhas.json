@@ -1,0 +1,10 @@
+[
+    {"nome":"escolha_A" ,"texto": "fecho os olhos e começo a dormir.","proximoCapNome":"Capitulo A" },
+    {"nome":"escolha_B" ,"texto": "você presta atenção e quando ela finaliza você decide tirar um cochilo.\n","proximoCapNome":"Capitulo B" },
+    {"nome":"escolha_A1" ,"texto": "Você começa a rezar desesperadamente e esquece de apertar os cintos.","proximoCapNome":"Final A1" },
+    {"nome":"escolha_A2" ,"texto": "Você Não faz nada e aproveita os seus ultimos momentos de vida olhando pela janela.\n","proximoCapNome":"Final A2" },
+    {"nome":"escolha_B1" ,"texto": "Você prestou atenção na aeromoça então aperta os cintos e fica na posição de impacto.","proximoCapNome":"Capitulo C" },
+    {"nome":"escolha_B2" ,"texto": "Você sai correndo desesperadamente para o banheiro do avião pois viu isso em um filme.\n","proximoCapNome":"Final B2" },
+    {"nome":"escolha_C1" ,"texto": "Correr para a floresta","proximoCapNome":"Final C1" },
+    {"nome":"escolha_C2" ,"texto": "jogar uma pedra nele","proximoCapNome":"Final C2" }
+]

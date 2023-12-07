@@ -1,0 +1,12 @@
+[
+    {"nome": "Introdução","texto":"The Florest\nVoce está viajando, dentro do avião a aeromoça começa a explicar as normas de segurança, mas você esta com muito sono, o que você faz?\n","nomePersonagem": "Sobrevivente"},
+    {"nome": "Capitulo A","texto": "\nVocê acorda depois de ouvir uma grande explosão, de imediato os sinais de cinto ligam e o piloto emite um aviso de voz comunicando um pouso de emergencia. O que você faz?\n","nomePersonagem": "Sobrevivente"},
+    {"nome": "Capitulo B","texto": "\nVocê acorda depois de ouvir uma grande explosão, de imediato os sinais de cinto ligam e o piloto emite um aviso de voz comunicando um pouso de emergencia. O que você faz?\n","nomePersonagem": "Sobrevivente"},
+    {"nome": "Capitulo C","texto": "\nVocê sobreviveu a queda, mas você perde a consciência e desmaia.\nAo retomar consciência você acorda rodeado de destroços de avião em uma ilha e não consegue se lembrar de nada.\nAo verificar os seus bolsos voce encontra uma carteira com um documento, ao ler o documento você descobre que o seu nome é...","nomePersonagem": "Sobrevivente"},
+    {"nome": "Final A2", "texto": "\n'...hum.. escolha não muito inteligente'","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
+    {"nome": "Final A1", "texto": "\nVocê acaba indo para o céu, onde encontra Michael Jackson e começa a dançar com ele.","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
+    {"nome": "Final B2", "texto": "\nVocê vira uma gelatina de ossos quebrados e sangue.","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
+    {"nome": "Final C1", "texto": "\nVocê corre para a floresta e consegue fugir dele, mas agora você está com fadiga.","nomePersonagem": "Sobrevivente", "dano": 0, "estamina": -3 },
+    {"nome": "Final C2", "texto": "\nVocê joga uma pedra nele e ele se assusta, se tornando mais agressivo ainda, ele se aproxima e te ataca.","nomePersonagem": "Sobrevivente","dano":-100, "estamina": 10 }
+  
+]

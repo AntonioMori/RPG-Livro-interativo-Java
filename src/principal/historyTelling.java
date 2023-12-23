@@ -106,18 +106,20 @@ public class historyTelling implements Serializable{
     }
 
 
-
+//Função para criar um mapa de capitulos a partir de um arquivo .json
     private static Map<String, capitulo> lerCapitulos(String filePath, List<personagem> listaPersonagens) {
         try (FileReader fileReaderCapitulos = new FileReader(filePath)) {
             Gson gson = new Gson();
             Type listaCapitulosType = new TypeToken<List<capitulo>>() {}.getType();
-            List<capitulo> listaCapitulos = gson.fromJson(fileReaderCapitulos, listaCapitulosType);
+            List<capitulo> listaCapitulos = gson.fromJson(fileReaderCapitulos, listaCapitulosType); //cria cada um dos capítulos e armazena em
+            //uma lista de capítulos
     
+            //cria um mapa de capítulos a partir da lista de capítulos
             // Criando um mapa de capítulos com o nome como chave
-            Map<String, capitulo> mapCapitulos = new HashMap<>();
+            Map<String, capitulo> mapCapitulos = new HashMap<>(); 
             
             for (capitulo cap : listaCapitulos) {
-                cap.setPersonagem(listaPersonagens);
+                cap.setPersonagem(listaPersonagens); //seta o personagem associado ao capitulo 
                 // Adicionando ao mapa de capítulos
                 mapCapitulos.put(cap.getNome(), cap);
             }
@@ -165,7 +167,7 @@ public class historyTelling implements Serializable{
     public static capitulo carregarProgresso(Map<String, capitulo> mapCapitulos,String filePath) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String nomeCapituloAtual = reader.readLine();
-            System.out.println("Teste DEPURAÇÃO"+nomeCapituloAtual);
+            System.out.println("Dev teste - cap: "+ nomeCapituloAtual+"\n");
             return mapCapitulos.get(nomeCapituloAtual);
         } catch (IOException e) {
             e.printStackTrace();

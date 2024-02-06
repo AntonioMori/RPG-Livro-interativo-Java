@@ -63,14 +63,12 @@ public class historyTelling implements Serializable{
         capituloA.setArray(escolhasCapA); //capitulo B aponta para escolhas do capitulo C
 
         
-        
         escolha[] escolhasCapB = new escolha[2];
         escolhasCapB[0] = mapEscolhas.get("escolha_B1");// B, sobreviver
         escolhasCapB[1] = mapEscolhas.get("escolha_B2"); //B , morrer
         
         capituloB.setArray(escolhasCapB); // escolhas do cap B
-        
-        
+            
         
         escolha[] escolhasCapC = new escolha[2];
         escolhasCapC[0] = mapEscolhas.get("escolha_C1"); // correr 
@@ -174,9 +172,6 @@ public class historyTelling implements Serializable{
             return null;
         }
     }
-
-
-
 
 }
     

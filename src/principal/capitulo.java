@@ -25,10 +25,10 @@ public class capitulo implements Serializable{
     private boolean diferencial;
     private escolha[] arrayEscolhas;
     private personagem personagemAssociado;
+    static Scanner input = new Scanner(System.in);
+    
     
 
-    
-    static Scanner input = new Scanner(System.in);
 
     public capitulo(String nome,String texto) {
         this.nome = nome;
@@ -79,21 +79,24 @@ public class capitulo implements Serializable{
             diferencial =false;
             
         }
-        if (arrayEscolhas != null) {
+        if (arrayEscolhas != null) { //se diferente de null entao mostra as opções
+            //cada opção tem um capitulo atrelado como proximo
             
             for (int i = 0; i < arrayEscolhas.length; i++) { 
             System.out.println(i+" - "+ arrayEscolhas[i].getTexto()); 
             
             }
             
-            System.out.println("Escolha uma opção: ");
+            System.out.println("Escolha uma opção: "); //quando mostrado as opçoes vai para o metodo .escolher
         
         }else{ // se nao houver um array de escolhas entao é um capitulo final logo, 
             //é visto as consequencias das suas escolhas
             
+            
             resetProgresso("data/capitulo_atual.txt");
             this.personagemAssociado.setVida(this.dano);
             this.personagemAssociado.setEstamina(this.estamina);
+            
             
         }
         
@@ -121,7 +124,7 @@ public class capitulo implements Serializable{
         int resposta;
 
         do {
-            try {
+            try {//tentar pegar a resposta
                 
                 resposta = input.nextInt();
 
@@ -239,3 +242,4 @@ public class capitulo implements Serializable{
 
 
 }
+

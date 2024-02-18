@@ -18,14 +18,24 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 
 
 
-public class historyTelling implements Serializable{
+public class historyTelling extends Application implements Serializable{
     public static void main(String[] args) {
-
-
         
+        launch(args);
+
+    
         
         Scanner input = new Scanner(System.in);
         //Lista de personagens
@@ -87,7 +97,7 @@ public class historyTelling implements Serializable{
         
         capituloC.setDiferencial();
         capAtual.executar();    
-        input.close();   
+        input.close();    
         
         
     }
@@ -171,6 +181,22 @@ public class historyTelling implements Serializable{
             e.printStackTrace();
             return null;
         }
+    }
+
+
+
+    // JAVA FX IMPLEMENTATION
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        // TODO Auto-generated method stub
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutTeste.fxml"));
+        
+        Parent root = fxmlLoader.load();
+        Scene tela = new Scene(root);
+
+        primaryStage.setTitle("The Florest");
+        primaryStage.setScene(tela);
+        primaryStage.show();
     }
 
 }

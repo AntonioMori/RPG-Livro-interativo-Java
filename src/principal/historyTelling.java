@@ -199,10 +199,10 @@ public class historyTelling extends Application implements Serializable{
         
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutTeste.fxml"));
         Parent root = fxmlLoader.load();
-        Scene tela = new Scene(root); 
+        Scene scene = new Scene(root); 
         
         primaryStage.setTitle("The Florest");
-        primaryStage.setScene(tela);
+        primaryStage.setScene(scene);
         primaryStage.show();
         
 

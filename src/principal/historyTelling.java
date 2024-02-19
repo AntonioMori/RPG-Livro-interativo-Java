@@ -16,16 +16,21 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 
 
@@ -185,18 +190,24 @@ public class historyTelling extends Application implements Serializable{
 
 
 
-    // JAVA FX IMPLEMENTATION
+// JAVA FX IMPLEMENTATION
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // TODO Auto-generated method stub
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutTeste.fxml"));
         
-        Parent root = fxmlLoader.load();
-        Scene tela = new Scene(root);
+        
 
+        
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutTeste.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene tela = new Scene(root); 
+        
         primaryStage.setTitle("The Florest");
         primaryStage.setScene(tela);
         primaryStage.show();
+        
+
+        //como mudar de uma fxml para o outro?
+        // as 3 fases já estão criadas, mas como mudar de uma para a outra?
     }
 
 }

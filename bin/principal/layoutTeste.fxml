@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
@@ -9,9 +11,23 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="telaInicial" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="518.0" style="-fx-border-width: 3px; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.startController">
    <children>
-      <Label layoutX="203.0" layoutY="126.0" text="Commit de teste" />
+      <ImageView fx:id="startImage" fitHeight="512.0" fitWidth="512.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Start.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoStart" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="193.0" layoutY="360.0" mnemonicParsing="false" onAction="#iniciarGame" prefHeight="37.0" prefWidth="127.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black; -fx-background-color: #0487ba;" text="Start" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>

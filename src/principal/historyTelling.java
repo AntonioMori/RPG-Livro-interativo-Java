@@ -41,7 +41,7 @@ public class historyTelling extends Application implements Serializable{
         launch(args);
 
     
-        
+        /*
         Scanner input = new Scanner(System.in);
         //Lista de personagens
         List<personagem> listaPersonagens = lerPersonagens("data/personagens.json");
@@ -100,10 +100,12 @@ public class historyTelling extends Application implements Serializable{
         }
     
         
+       
         capituloC.setDiferencial();
         capAtual.executar();    
-        input.close();    
         
+        input.close();    
+        */
         
     }
     

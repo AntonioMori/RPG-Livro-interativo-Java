@@ -16,10 +16,10 @@ public class entradaControler {
     private AnchorPane telaEntrada;
 
     public void initialize() {
-        // Crie uma transição de pausa de 2 segundos
+        
         PauseTransition pause = new PauseTransition(Duration.seconds(1.17));
         
-        // Configura um evento para ocorrer após a pausa
+        
         pause.setOnFinished(event -> {
             try {
                 // Carrega a próxima cena do arquivo FXML
@@ -28,7 +28,7 @@ public class entradaControler {
                 
                 // Configura a cena
                 Scene scene = new Scene(root);
-                Stage stage = (Stage) telaEntrada.getScene().getWindow(); // Supondo que você tem uma referência ao AnchorPane
+                Stage stage = (Stage) telaEntrada.getScene().getWindow(); 
                 stage.setScene(scene);
             } catch (IOException e) {
                 e.printStackTrace();

@@ -1,11 +1,2 @@
 # RPG-Livro-interativo-Java
-java projects
-add library's
-javaFx-sdk>lib>all
-
-depois main extends Application
- import java.Application.Application
- import javaFx.stage.Stage
-@override metodos necessários (metodo start)
-
-no main {launch(args)}
+Este é um projeto realizado em sala de aula da matéria de programação 2 do discente Antonio Umberto Camargo Mori, da Universidade Federal Rural de Pernambuco (UFRPE) com o auxílio do professor Lucas Figueiredo, tais arquivos anexados são pontos de partida para a construção de um projeto em função do aprendizado na linguagen Java e uso de ferramentas como VScode, Git e GitHub

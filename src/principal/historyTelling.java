@@ -18,7 +18,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -38,11 +37,18 @@ import javafx.scene.Parent;
 public class historyTelling extends Application implements Serializable{
     public static void main(String[] args) {
         
-        launch(args);
+        
 
-    
-        /*
         Scanner input = new Scanner(System.in);
+
+        //escolha de qual versão você quer jogar
+        versionChoice Verificadorversao = new versionChoice(input);
+        int escolha = Verificadorversao.chooseVersion(input);
+        if (escolha == 1) {
+            
+        
+        
+        
         //Lista de personagens
         List<personagem> listaPersonagens = lerPersonagens("data/personagens.json");
         
@@ -105,9 +111,13 @@ public class historyTelling extends Application implements Serializable{
         capAtual.executar();    
         
         input.close();    
-        */
         
-    }
+        } 
+        else if(escolha == 2)
+        {
+            iniciarJavaFX(args);
+        }
+    }//fim do main
     
     //Função para criar um mapa de personagens a partir de um arquivo .json
     private static List<personagem> lerPersonagens(String filePath) {
@@ -208,8 +218,12 @@ public class historyTelling extends Application implements Serializable{
         primaryStage.show();
         
 
-        //como mudar de uma fxml para o outro?
-        // as 3 fases já estão criadas, mas como mudar de uma para a outra?
+        
+    }
+
+    // Método para iniciar a parte do JavaFX
+    private static void iniciarJavaFX(String[] args) {
+        launch(args);
     }
 
 }

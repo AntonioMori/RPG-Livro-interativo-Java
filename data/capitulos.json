@@ -6,7 +6,7 @@
     {"nome": "Final A2", "texto": "\n'...hum.. escolha não muito inteligente'","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
     {"nome": "Final A1", "texto": "\nVocê acaba indo para o céu, onde encontra Michael Jackson e começa a dançar com ele.","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
     {"nome": "Final B2", "texto": "\nVocê vira uma gelatina de ossos quebrados e sangue.","nomePersonagem": "Sobrevivente", "dano": -100, "estamina": 10 },
-    {"nome": "Final C1", "texto": "\nVocê corre para a floresta e consegue fugir dele, mas agora você está com fadiga.","nomePersonagem": "Sobrevivente", "dano": 0, "estamina": -3 },
+    {"nome": "Final C1", "texto": "\nVocê corre para a floresta e consegue fugir dele, Apesar de estar com fadiga você sobreviveu... To be continued","nomePersonagem": "Sobrevivente", "dano": 0, "estamina": -3 },
     {"nome": "Final C2", "texto": "\nVocê joga uma pedra nele e ele se assusta, se tornando mais agressivo ainda, ele se aproxima e te ataca.","nomePersonagem": "Sobrevivente","dano":-100, "estamina": 10 }
   
 ]

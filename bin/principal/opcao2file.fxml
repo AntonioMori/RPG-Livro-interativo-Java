@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="telaIdle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="518.0" style="-fx-border-width: 3px; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.prefinal2Controler">
+   <children>
+      <ImageView fx:id="idleImage" fitHeight="512.0" fitWidth="512.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Interioraviao2.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="143.0" prefWidth="221.0" text="Você acorda depois de ouvir uma grande explosão, de imediato os sinais de cinto ligam e o piloto emite um aviso de voz comunicando um pouso de emergencia. O que você faz?" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Consolas Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="botao2" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="284.0" layoutY="410.0" mnemonicParsing="false" onAction="#opcao2" prefHeight="93.0" prefWidth="205.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black; -fx-background-color: #0487ba;" text="Você Não faz nada e aproveita os seus ultimos momentos de vida olhando pela janela." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Consolas Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="botao1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="25.0" layoutY="422.0" mnemonicParsing="false" onAction="#opcao1" prefHeight="68.0" prefWidth="221.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black; -fx-background-color: #0487ba;" text="Você começa a rezar desesperadamente e esquece de apertar os cintos." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Consolas Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

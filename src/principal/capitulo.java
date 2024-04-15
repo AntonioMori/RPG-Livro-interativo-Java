@@ -87,7 +87,8 @@ public class capitulo implements Serializable{
             
             }
             
-            System.out.println("Escolha uma opção: "); //quando mostrado as opçoes vai para o metodo .escolher
+            System.out.println("Escolha uma opção: "); 
+            //uma vez mostrado as opçoes e printado a pergunta entáo ele vai para o metodo .escolher
         
         }else{ // se nao houver um array de escolhas entao é um capitulo final logo, 
             //é visto as consequencias das suas escolhas
@@ -124,7 +125,7 @@ public class capitulo implements Serializable{
         int resposta;
 
         do {
-            try {//tentar pegar a resposta
+            try {//tentar pegar a resposta, verificaçao do int resposta
                 
                 resposta = input.nextInt();
 
@@ -137,10 +138,12 @@ public class capitulo implements Serializable{
                 System.out.println("Entrada inválida. Por favor, digite um número inteiro.");
                 resposta = -1; // Define resposta como -1 para continuar no loop
             }
-        } while (!buscaIndice(resposta));
+        } while (!buscaIndice(resposta)); //enquanto a resposta nao for valida ele continua no loop
 
         // Executa a escolha válida
-        for (int i = 0; i < arrayEscolhas.length; i++) {
+        for (int i = 0; i < arrayEscolhas.length; i++) { 
+            //para cada escolha, se a resposta for igual ao indice da escolha, 
+            //entao ele executa o proximo capitulo atrelado a escolha daquele indice
             if (resposta == i) {
                 capitulo proximo = arrayEscolhas[i].getProximo();
                 

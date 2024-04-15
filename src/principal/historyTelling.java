@@ -3,33 +3,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 
 
@@ -62,10 +46,15 @@ public class historyTelling extends Application implements Serializable{
         capitulo capituloA = mapCapitulos.get("Capitulo A");
         capitulo capituloB = mapCapitulos.get("Capitulo B");
         capitulo capituloC = mapCapitulos.get("Capitulo C");
+        @SuppressWarnings("unused")
         capitulo finalA2 = mapCapitulos.get("Final A2");
+        @SuppressWarnings("unused")
         capitulo finalA1 = mapCapitulos.get("Final A1");
+        @SuppressWarnings("unused")
         capitulo finalB2 = mapCapitulos.get("Final B2");
+        @SuppressWarnings("unused")
         capitulo finalC1 = mapCapitulos.get("Final C1");
+        @SuppressWarnings("unused")
         capitulo finalC2 = mapCapitulos.get("Final C2");
         
         

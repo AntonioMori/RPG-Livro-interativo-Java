@@ -16,7 +16,6 @@ public class startController {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
 
     @FXML
     private AnchorPane telaInicial;

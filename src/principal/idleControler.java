@@ -16,7 +16,7 @@ public class idleControler {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
+   
 
     @FXML
     private Button botao2;
